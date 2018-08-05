@@ -6,24 +6,33 @@
 
 // variables
 $gyVars: (
-  prefix : gy,
-  helperPrefix : gy-h,
+  prefix : class,
+  helperPrefix : class,
   wrapWidth : 1200px,
   wrapName : wrap,
-  gridName : g,
-  colName : c,
+  gridName : row,
+  colName : col,
   colTot : 12,
-  orderName : order,
+  orderName : col-order,
   offsetName : off,
   gutter : 16px, // total
   colBottom : 16px, // usually same as gutter
-  bpDivider : '', // usually empty, see customization docs for more info
+  bpDivider : '-', // usually empty, see customization docs for more info
   bp : (
     // careful: do not use the letter 'g' or 'c' here, it would break the grid
     // because it's the gridName and colName
-    s : 400px,
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    s: 576px,
+    // Medium screen / tablet
     m : 768px,
-    l : 1100px
+    // Large screen / desktop
+    l : 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px,
+    // Extra extra large
+    xxl: 1600px
   )
 );
 
